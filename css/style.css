@@ -19,6 +19,8 @@ body {
 .todolist {
   width: 100%;
   max-width: 600px;
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
   box-shadow: inset -1px 3px 8px 25px whitesmoke, 0px 1px 30px 0px whitesmoke, 0px 1px 8px 2px whitesmoke;
 }
 .todolist header {
@@ -134,5 +136,21 @@ body {
   }
   100% {
     transform: rotateX(-90deg);
+  }
+}
+@-webkit-keyframes float {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-20px);
   }
 }/*# sourceMappingURL=style.css.map */
